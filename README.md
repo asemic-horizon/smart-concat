@@ -1,6 +1,6 @@
 # smart-concat
 
-Unless you use sophisticated data pipelines from the beginning of projects or have the masochistic bent to use scikit-learn's `ColumnTransformer` in an iterative manner, you'll be finding at the rough exploratory stage that many common data transformations will eat your smartly-indexed and maybe metadata-annotated and give back a plain numpy ndarray. This became a source of pain this week, so I developed this: a smart way of absorbing ndarrays into pd.DataFrame.
+Unless you use sophisticated data pipelines from the beginning of projects or have the masochistic bent to use scikit-learn's `ColumnTransformer` in an iterative manner, you'll be finding at the rough exploratory stage that many common data transformations will eat your smartly-indexed and maybe metadata-annotated and give back a plain numpy ndarray. This became a source of pain this week, so I developed this: a smart way of absorbing ndarrays into pd.DataFrame, complete with a prefix assignment system that's locality sensitive for small changes.
 
 An example:
 
